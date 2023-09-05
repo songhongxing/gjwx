@@ -12,7 +12,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @author songhongxing
  * @date 2023/09/05 4:17 下午
  */
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class, MongoAutoConfiguration.class})
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @EnableScheduling
 public class GjwxApplication {
 
