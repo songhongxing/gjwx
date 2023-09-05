@@ -77,6 +77,12 @@ public class UserEntity extends RichEntity {
   )
   private Date zcsj;
 
+  @TableField(
+          value = "czrq",
+          desc = "重置日期"
+  )
+  private Integer czrq;
+
   @Override
   public final Class entityClass() {
     return UserEntity.class;

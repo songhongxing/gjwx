@@ -64,4 +64,25 @@ public class Userservice {
         }
     }
 
+    /**
+     * 登陆用户
+     * @param userId
+     * @return
+     */
+    public UserEntity denglu(String userId){
+        UserEntity userEntity = userDao.selectById(userId);
+        userDao.updateDlrq(userId);
+        return userEntity;
+    }
+
+    /**
+     * 查询用户信息
+     * @param userId
+     * @return
+     */
+    public UserEntity cxyhxx(String userId){
+        UserEntity userEntity = userDao.selectById(userId);
+        return userEntity;
+    }
+
 }

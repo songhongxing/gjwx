@@ -11,4 +11,6 @@ import cn.yuxi.gjwx.entity.UserEntity;
  * <p/>@author Powered By Fluent Mybatis
  */
 public interface UserDao extends IBaseDao<UserEntity> {
+
+    void updateDlrq(String userId);
 }
