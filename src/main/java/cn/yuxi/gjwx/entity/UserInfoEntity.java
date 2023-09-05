@@ -33,17 +33,23 @@ public class UserInfoEntity extends RichEntity {
   private static final long serialVersionUID = 1L;
 
   @TableId(
-      value = "id",
+      value = "user_id",
       auto = false,
       desc = "主键"
   )
-  private String id;
+  private String userId;
 
   @TableField(
       value = "bxdj",
       desc = "宝箱等级"
   )
   private Integer bxdj;
+
+  @TableField(
+          value = "wjdh",
+          desc = "玩家动画"
+  )
+  private String wjdh;
 
   @TableField(
       value = "hbjc",
@@ -110,6 +116,12 @@ public class UserInfoEntity extends RichEntity {
       desc = "太上感应经"
   )
   private Integer tsgyj;
+
+  @TableField(
+      value = "txz",
+      desc = "头像帧"
+  )
+  private Integer txz;
 
   @TableField(
       value = "wjdj",

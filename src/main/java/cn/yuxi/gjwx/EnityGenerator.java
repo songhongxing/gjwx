@@ -29,7 +29,7 @@ public class EnityGenerator {
             /** 如果表定义记录创建，记录修改，逻辑删除字段 **/
 //            gmtCreated = "gmt_create", gmtModified = "gmt_modified", logicDeleted = "is_deleted",
             // 设置哪些表要生成Entity文件
-            tables = {@Table(value = {"user","cdk","user_attribute","user_cdk","user_info","user_msg","xtgg","user_cd"})
+            tables = {@Table(value = {"user","user_info"})
                     //设置继承的实体类
                     //entity = IEntity.class
                     }

@@ -16,7 +16,7 @@ public class UUIDUtil {
             "w", "x", "y", "z" };
 
 
-    public static String generateShortUuid() {
+    public static String uuid() {
         StringBuffer shortBuffer = new StringBuffer();
         String uuid = UUID.randomUUID().toString().replace("-", "");
         for (int i = 0; i < 8; i++) {
@@ -27,9 +27,4 @@ public class UUIDUtil {
         return shortBuffer.toString();
     }
 
-    public static void main(String[] args) {
-        for(int i = 0; i < 100; i++){
-            System.out.println(generateShortUuid());
-        }
-    }
 }

@@ -3,6 +3,8 @@ package cn.yuxi.gjwx.dao.intf;
 import cn.org.atool.fluent.mybatis.base.IBaseDao;
 import cn.yuxi.gjwx.entity.XtggEntity;
 
+import java.util.List;
+
 /**
  * XtggDao: 数据操作接口
  *
@@ -11,4 +13,6 @@ import cn.yuxi.gjwx.entity.XtggEntity;
  * <p/>@author Powered By Fluent Mybatis
  */
 public interface XtggDao extends IBaseDao<XtggEntity> {
+
+    List<XtggEntity> wgqgg();
 }

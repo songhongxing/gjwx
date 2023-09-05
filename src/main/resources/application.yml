@@ -7,7 +7,7 @@ log:
 # 应用名称
 spring:
   application:
-    name: fhjs
+    name: gjwx
   data:
   datasource:
     druid:

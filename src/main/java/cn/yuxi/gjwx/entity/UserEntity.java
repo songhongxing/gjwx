@@ -4,6 +4,7 @@ import cn.org.atool.fluent.mybatis.annotation.FluentMybatis;
 import cn.org.atool.fluent.mybatis.annotation.TableField;
 import cn.org.atool.fluent.mybatis.annotation.TableId;
 import cn.org.atool.fluent.mybatis.base.RichEntity;
+import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -46,6 +47,18 @@ public class UserEntity extends RichEntity {
   private Integer allJf;
 
   @TableField(
+      value = "dlrq",
+      desc = "登陆日期"
+  )
+  private Integer dlrq;
+
+  @TableField(
+      value = "dlsj",
+      desc = "登陆时间"
+  )
+  private Date dlsj;
+
+  @TableField(
       value = "fwq_id",
       desc = "服务器id"
   )
@@ -57,11 +70,12 @@ public class UserEntity extends RichEntity {
   )
   private Integer singleJf;
 
+
   @TableField(
-      value = "wjdh",
-      desc = "玩家动画"
+      value = "zcsj",
+      desc = "注册时间"
   )
-  private String wjdh;
+  private Date zcsj;
 
   @Override
   public final Class entityClass() {
